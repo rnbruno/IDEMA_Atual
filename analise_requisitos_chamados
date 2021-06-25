@@ -2,6 +2,11 @@
 Alterar links nos arquivos 
 
 default.asp
-roteador_paginas.asp
+roteador_paginas.asp{
+case "visualizar_chamados_encerrados_usuario":
+																													//comment previous 'pagina inicial do cerberus
+		header('Location: cerberus/chamados/visualizar_chamados_encerrados_usuario.php?local=ch');
+		break;
+	default:}
 renova_sessao.asp
 princ.asp
