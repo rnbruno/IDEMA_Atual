@@ -13,7 +13,9 @@ case "visualizar_chamados_encerrados_usuario":
 		header('Location: cerberus/chamados/visualizar_chamados_encerrados_usuario.php?local=ch');
 		break;
 	default:}
-renova_sessao.asp
+renova_sessao.asp{
+	Não encontrado
+}
 princ.asp
 --------------------------------------------------------------------------------------------------------------------
 ->Função criada no arquivo conf\funcoes.php
