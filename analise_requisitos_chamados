@@ -55,7 +55,8 @@ visualizar_chamados_encerrados_atendente.php->visualizar_chamados.php?visualizar
 visualizar_chamados_encerrados_usuario.php->../../roteador_paginas.php?pagina=visualizar_chamados_encerrados_usuario
 	->../default.php
 	->roteador_paginas.php?pagina=chamados
-	->
+	->receivers/recebe_avaliar_chamado.php
+	->visualizar_solucoes_chamado.php?chamado_id=
 	
 visualizar_solucoes_chamado.php->
 
