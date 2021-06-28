@@ -3,7 +3,7 @@ Registros:
 
 Alterar links nos arquivos 
 
-default.asp{
+default.php{
 	<% if session("usuario_id") <> "0728" then %>            
 	<a href="chamados/cadastro_chamado.php" target="area"
 	}
