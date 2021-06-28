@@ -58,7 +58,7 @@ visualizar_chamados_encerrados_usuario.php->../../roteador_paginas.php?pagina=vi
 	->receivers/recebe_avaliar_chamado.php
 	->visualizar_solucoes_chamado.php?chamado_id=
 	
-visualizar_solucoes_chamado.php->
+visualizar_solucoes_chamado.php->receivers/recebe_atender_chamado.php
 
 cadastraUsuario_ajax.php->
 
