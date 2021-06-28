@@ -15,6 +15,7 @@ case "visualizar_chamados_encerrados_usuario":
 	default:}
 renova_sessao.asp
 princ.asp
+--------------------------------------------------------------------------------------------------------------------
 ->Função criada no arquivo conf\funcoes.php
 
 function get_area_funcional_id_usuario($id_usuario,$pdo){
@@ -25,6 +26,7 @@ function get_area_funcional_id_usuario($id_usuario,$pdo){
 		}
 		return $item_area_funcional;		
 	}
+--------------------------------------------------------------------------------------------------------------
 ->alterar script no banco
 /****** Script for SelectTopNRows command from SSMS  ******/
 SELECT TOP 1000 [menu_id]
