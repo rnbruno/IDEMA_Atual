@@ -1,4 +1,6 @@
 
+Registros:
+
 Alterar links nos arquivos 
 
 default.asp{
@@ -13,3 +15,24 @@ case "visualizar_chamados_encerrados_usuario":
 	default:}
 renova_sessao.asp
 princ.asp
+->Função criada no arquivo conf\funcoes.php
+
+function get_area_funcional_id_usuario($id_usuario,$pdo){
+		$sql="SELECT area_funcional_id FROM usuario WHERE usuario_id =" . $id_usuario;
+		$rs = $pdo->query($sql)->fetchAll();
+		foreach ($rs as $item_area){
+			$item_area_funcional = $item_area["area_funcional_id"];
+		}
+		return $item_area_funcional;		
+	}
+->alterar script no banco
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP 1000 [menu_id]
+      ,[titulo]
+      ,[script]
+      ,[requer_id]
+      ,[entidade]
+      ,[menu_pai_id]
+  FROM [cerberus_2002].[dbo].[MENU] where script like '%chamados%'
+  ==menu_id	titulo	script	requer_id	entidade	menu_pai_id
+6.22	Visualizar Chamados	chamados/visualizar_chamados.asp/	0	NULL	6
