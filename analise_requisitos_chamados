@@ -50,7 +50,7 @@ visualizar_chamados.php->../avisos/aviso_quantidade_json.php
 	->atender_chamado.php
 	
 visualizar_chamados_encerrados_atendente.php->visualizar_chamados.php?visualizar_todas_areas=sim
-	->
+	->atender_chamado.php?chamado_id=
 	
 visualizar_chamados_encerrados_usuario.php->../../roteador_paginas.php?pagina=visualizar_chamados_encerrados_usuario
 	->../default.php
