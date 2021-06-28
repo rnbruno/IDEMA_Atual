@@ -16,7 +16,10 @@ case "visualizar_chamados_encerrados_usuario":
 renova_sessao.asp{
 	Não encontrado
 }
-princ.asp
+princ.asp{
+	Não encontrado
+}
+------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------
 ->Função criada no arquivo conf\funcoes.php
 
@@ -29,6 +32,52 @@ function get_area_funcional_id_usuario($id_usuario,$pdo){
 		return $item_area_funcional;		
 	}
 --------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
+->Link externos ao bloco chamados
+//Mapeando todos os outros links para evitar erros de chamda externa ao bloco
+cadastro_chamados.php ->funcoes.php
+	->cadastraUsuario_ajax.php
+	->ajax_atualizaUsuario.php
+	->listaUsuario_json.php
+	->../princ.asp
+	->visualizar_chamados_encerrados_usuario.php?local=ch
+	
+listaUsuario_json.php ->
+
+visualizar_chamados.php->../avisos/aviso_quantidade_json.php
+	->visualizar_chamados_encerrados_atendente.php
+	->visualizar_chamados.php?visualizar_todas_areas=sim
+	->
+	
+visualizar_chamados_encerrados_atendente.php->visualizar_chamados.php?visualizar_todas_areas=sim
+	->
+	
+visualizar_chamados_encerrados_usuario.php->../../roteador_paginas.php?pagina=visualizar_chamados_encerrados_usuario
+	->../default.php
+	->roteador_paginas.php?pagina=chamados'
+	->
+	
+visualizar_solucoes_chamado.php->
+
+cadastraUsuario_ajax.php->
+
+avaliar_chamado.php->
+	->receivers/recebe_avaliar_chamado.php
+atender_chamado.php->listaUsuario_json.php
+	->
+	
+ajax_atualizaUsuario.php->
+
+recebe_atender_chamado.php->visualizar_chamados.php
+
+recebe_avaliar_chamado.php->/visualizar_chamados_encerrados_usuario.php?local=ch
+	->chamados/visualizar_chamados.php
+recebe_cadastro_chamado.php->../cadastro_chamado.php
+
+
+
+-------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
 ->alterar script no banco
 /****** Script for SelectTopNRows command from SSMS  ******/
 SELECT TOP 1000 [menu_id]
@@ -40,3 +89,5 @@ SELECT TOP 1000 [menu_id]
   FROM [cerberus_2002].[dbo].[MENU] where script like '%chamados%'
   ==menu_id	titulo	script	requer_id	entidade	menu_pai_id
 6.22	Visualizar Chamados	chamados/visualizar_chamados.asp/	0	NULL	6
+
+-----------------------------------------------------------------------------------------------
