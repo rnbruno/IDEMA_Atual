@@ -47,14 +47,14 @@ listaUsuario_json.php ->
 visualizar_chamados.php->../avisos/aviso_quantidade_json.php
 	->visualizar_chamados_encerrados_atendente.php
 	->visualizar_chamados.php?visualizar_todas_areas=sim
-	->
+	->atender_chamado.php
 	
 visualizar_chamados_encerrados_atendente.php->visualizar_chamados.php?visualizar_todas_areas=sim
 	->
 	
 visualizar_chamados_encerrados_usuario.php->../../roteador_paginas.php?pagina=visualizar_chamados_encerrados_usuario
 	->../default.php
-	->roteador_paginas.php?pagina=chamados'
+	->roteador_paginas.php?pagina=chamados
 	->
 	
 visualizar_solucoes_chamado.php->
