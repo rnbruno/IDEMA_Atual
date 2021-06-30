@@ -1,7 +1,10 @@
 
 Dim 'declaration variable
+--------
 split 'funcao
 a=Split("Brown cow, White horse, Yellow chicken",",")
 for each x in a
     response.write(x & "<br />")
 next
+------- função
+LBound to UBound 
