@@ -6,5 +6,10 @@ a=Split("Brown cow, White horse, Yellow chicken",",")
 for each x in a
     response.write(x & "<br />")
 next
+substitution explode()
 ------- função
 LBound to UBound 
+substitution array[0] for left and array[1] for right
+
+-------function
+trim
