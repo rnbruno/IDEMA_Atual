@@ -2,7 +2,7 @@
 Dim 'declaration variable
 --------
 split 'funcao
-a=Split("Brown cow, White horse, Yellow chicken",",")
+a=Split("Brown cow, White horse, Yellow chicken",",") 'breaking into space
 for each x in a
     response.write(x & "<br />")
 next
