@@ -12,4 +12,4 @@ LBound to UBound
 substitution array[0] for left and array[1] for right
 
 -------function
-trim
+trim remove space of string left and right
