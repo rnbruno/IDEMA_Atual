@@ -13,3 +13,8 @@ substitution array[0] for left and array[1] for right
 
 -------function
 trim remove space of string left and right
+
+------
+XMLHttpRequest
+https://javascript.info/xmlhttprequest
+Para fazer requisição GET.
