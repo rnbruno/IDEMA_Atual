@@ -25,3 +25,26 @@ Para fazer requisição GET.
 --------
 readyState
 https://www.tutorialspoint.com/ajax/what_is_xmlhttprequest.htm
+
+--------
+function valida(){
+checkbox = document.frm.ativar_desativar; //[object RadioNodeList]
+		
+		
+		/*marcado = false;
+
+		for(i=0; i<checkbox.length; i++){
+			if (checkbox[i].checked){
+				marcado = true;
+				break;
+			}
+
+		}
+		
+		if(!marcado){
+			alert("Selecione um usuário!");
+			return false;
+		}
+}
+
+$('input[name="chk[]"]:checked').length > 0
