@@ -1,0 +1,550 @@
+/* CSS Document */
+html{
+	height: 100%;
+}
+body{
+	background:url(../img/bg_body.jpg);
+	font-family: Verdana, Geneva, sans-serif;
+	color:#474649;
+	line-height:24px;
+	height: 100%;
+	font-size: 0.85em;
+}
+
+/*
+#tudo {
+	min-height: 100%;
+	position: relative;
+}
+*/
+h2{
+	font-size:22px;
+	line-height:22px;
+	margin-bottom:20px;
+	color:#474649;
+}
+
+h2.icon_folder_small {
+	padding:0 0 0 90px;
+	height: 60px;
+	line-height: 60px;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+h3:first-child {
+	margin-top:0;
+}
+
+h3 {
+	font-size: 15px;
+	margin-top:15px;
+	margin-bottom: 10px;
+}
+
+#header {
+	width:100%;
+	height:100px;
+	background:url(../img/bg_header.png) repeat-x;
+	z-index:9000;
+	margin-bottom: 25px;
+}
+
+#logo{
+	float:left;
+	background:url(../img/sislia_marca_principal_logo2.png) left center no-repeat;
+	margin:0;
+	padding:0;
+}
+/*
+	background:url(../img/logo.png) left center no-repeat;
+
+*/
+#logo a{
+	width:439px;
+	height:73px;
+	display:block;
+	text-indent:-9999px;
+}
+
+#menu-top {
+	border:1px solid #e0e0e0;
+	margin:0 auto 25px;
+	width:1000px;
+}
+
+#menu-top ul {
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+#menu-top li:first-child {
+	border:0;
+}
+
+#menu-top li {
+	float:left;
+	height: 30px;
+	background:white;	
+	width: 249px;
+	border-left:1px solid #cecece;
+}
+
+#menu-top li a {
+	display: block;
+	font-size: 14px;
+	color:#666;
+	padding-left:20px;
+	line-height: 30px;
+}
+
+.menu-center {
+	text-align: center;
+	list-style: none;
+}
+
+.menu-center li:first-child {
+	margin-left: 0;
+}
+
+.menu-center li {
+	display: inline-block;
+	margin-left: 10px;
+	text-align: center;
+}
+
+.menu-index li a {
+	display: block;
+	width:205px;
+	height: 205px;
+	background-color:#dcecf9;
+	background-position: center 20px;
+	background-repeat: no-repeat;
+	color:#31638c;
+	border:5px solid #31638c;
+	position: relative;
+}
+
+.menu-index li a:hover {
+	background-color:#31638c;
+	color:#fff;
+	border:5px solid #dcecf9;	
+	text-decoration: none;
+}
+
+.menu-index li a span {
+	position: relative;
+	top:80%;
+}
+/*
+#content{
+	width:90%;
+	margin:0 auto 25px;
+	padding:20px;
+	border:solid 1px #e0e0e0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background:#fff;
+	position: relative;
+	padding-bottom: 100px;
+	min-height: 573px;
+}
+*/
+#content2{
+	width:1160px;
+	margin:0 auto 25px;
+	padding:20px;
+	border:solid 1px #e0e0e0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background:#fff;
+	position: relative;
+	padding-bottom: 100px;
+	min-height: 1000px;
+}
+/*
+#footer{
+	background:url(../img/bg_footer.png) top repeat-x;
+	color:#999999;
+	text-shadow:1px 1px 1px #363539;
+	height: 53px;
+	padding-top:35px;
+	width: 100%;
+	position: relative;
+	bottom: 0;
+}
+*/
+#footer hr {
+	margin:0 0 0px 0;
+}
+
+#about{
+	width:980px;
+	height:15px;
+	float:left;
+	font-size: 12px;
+	color:white;
+}
+
+#lua4 {
+	display: block;
+    height: 10px;
+    width: 35px;
+	text-indent:-9999px;
+	background:url(../img/logo_lua4.png) no-repeat;
+	float:right;
+}
+
+#frm_log {
+	width:260px;
+	margin:0 auto;
+	padding: 20px 20px 20px 135px;
+	background: url(../img/icon_key.png) 20px center no-repeat;
+	border:1px solid #ebebeb;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-wbekit-border-radius: 5px;
+}
+
+.box-ajuda {
+	display: inline-block;
+	height:40px;
+	border:1px solid #cecece;
+	font-size: 20px;
+	line-height: 40px;
+	text-decoration: none;
+	padding:10px 10px 10px 65px;
+	background-position: 15px center;
+	background-repeat: no-repeat;
+}
+
+.box-ajuda:hover {
+	text-decoration: underline;
+}
+
+.interna-right {
+	border:1px solid #cecece;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding:20px;
+	margin-top:30px;
+}
+
+.icon_ajuda_small {
+	height:23px;
+	margin-left: 10px;
+	padding-left: 20px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	line-height: 23px;
+}
+
+#dados_processo_container {
+	position: relative;
+	right: 0px;
+	top: 0px;
+	float: right;
+}
+
+.dados_processo {
+	float: right;
+	font-weight: bold;
+	clear: right;
+}
+
+.checklist {
+	list-style: none;
+}
+
+.checklist li:first-child {
+	margin-top:0;
+}
+
+.checklist li {
+	padding-left:40px;
+	background:url(../img/bg_checklist_off.png) left 3px no-repeat;
+	margin-top:20px;
+}
+
+.checklist li.on {
+	background:url(../img/bg_checklist_on.png) left 3px no-repeat;	
+}
+
+.checklist li.fail {
+	background:url(../img/bg_checklist_fail.png) left 3px no-repeat;	
+}
+
+.checklist  li.v {
+	background: url('../img/check_v.png') no-repeat;	
+}
+
+.checklist  li.vj {
+	background: url('../img/check_v_j.png') no-repeat;	
+}
+
+.checklist  li.x {
+	background: url('../img/check_x.png') no-repeat;	
+}
+
+
+.checklist_min {
+	list-style: none;
+}
+
+.checklist_min li {
+	padding-left:25px;
+	background:url(../img/bg_checklist_off.png) left 3px no-repeat;
+	margin-top:10px;
+}
+
+.checklist_min  li.v {
+	background: url('../img/check_v_min.png') no-repeat;	
+}
+
+.checklist_min li.x {
+	background: url('../img/check_x_min.png') no-repeat;	
+}
+
+.checklist_min  li.exc {
+	background: url('../img/check_exc.png') no-repeat;	
+}
+
+li.fase {
+/*	height: 32px; */
+	padding-top: 8px;
+	font-size: 18px;
+}
+
+li.fase_min {
+/*	height: 32px; */
+	font-size: 14px;
+}
+
+h5.fase {
+	text-align: center;
+}
+
+.anotacao {
+	background-color: #fdfe98;
+}
+
+.mensagens {
+	list-style-type: none;
+	margin-top: 10px;
+}
+	
+.mensagens li {
+	background: url();
+	font-size: 12px;
+	padding: 0px;
+	margin: 2px;
+	padding-left: 20px; 
+}
+.mensagens  li.aviso{
+	background: url('../img/exc_13.png') no-repeat;	
+}
+
+.mensagens  li.erro{
+	background: url('../img/x_13.png') no-repeat;	
+}
+
+.checklist_situacao {
+	list-style: none;
+}
+
+.checklist_situacao li {
+	padding-left:40px;
+	margin-top:20px;
+}
+
+/* helpers */
+
+.center {
+	width:980px;
+	margin:0 auto;
+}
+
+.clear { clear:both; }
+
+hr.blue {
+	border-top:1px solid #0e385a;
+	border-bottom:1px solid #487eab;
+}
+
+label.radio {
+	margin-bottom: 20px;
+}
+
+.hidden {
+	display: none;
+}
+
+.red_text {
+	color:#BB0000;
+}
+
+.icon_document { background-image: url(../img/icon_document.png); }
+.icon_folder { background-image: url(../img/icon_folder.png); }
+.icon_folder_small { background-image: url(../img/icon_folder_small.png); }
+.icon_ajuda { background-image: url(../img/icon_ajuda.png); }
+.icon_ajuda_small { background-image: url(../img/icon_ajuda_small.png); }
+
+/* Sidenav for Docs
+-------------------------------------------------- */
+
+.bs-docs-sidenav {
+
+  margin: 30px 0 0;
+  padding: 0;
+  background-color: #fff;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+     -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+          box-shadow: 0 1px 4px rgba(0,0,0,.065);
+}
+.bs-docs-sidenav > li > a {
+  display: block;
+  width: 190px \9;
+  margin: 0 0 -1px;
+  padding: 8px 14px;
+  border: 1px solid #e5e5e5;
+  color:#474649;
+}
+.bs-docs-sidenav > li:first-child > a {
+  -webkit-border-radius: 6px 6px 0 0;
+     -moz-border-radius: 6px 6px 0 0;
+          border-radius: 6px 6px 0 0;
+}
+.bs-docs-sidenav > li:last-child > a {
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+}
+.bs-docs-sidenav > .active > a {
+  position: relative;
+  z-index: 2;
+  padding: 9px 15px;
+  border: 0;
+  background:#0088cc;
+  text-shadow: 0 1px 0 rgba(0,0,0,.15);
+  -webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+     -moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+          box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+}
+/* Chevrons */
+.bs-docs-sidenav .icon-chevron-right {
+  float: right;
+  margin-top: 2px;
+  margin-right: -6px;
+  opacity: .25;
+}
+.bs-docs-sidenav > li > a:hover {
+  background-color: #0088cc;
+  color:white;
+}
+.bs-docs-sidenav a:hover .icon-chevron-right {
+  opacity: .5;
+}
+.bs-docs-sidenav .active .icon-chevron-right,
+.bs-docs-sidenav .active a:hover .icon-chevron-right {
+  background-image: url(../img/glyphicons-halflings-white.png);
+  opacity: 1;
+}
+
+.bs-docs-sidenav.affix-bottom {
+  position: absolute;
+  top: auto;
+  bottom: 270px;
+}
+
+
+.ddsmoothmenu ul li a.selected{ /*CSS class that's dynamically added to the currently active menu items' LI A element*/
+	background: black;
+	color: white;
+}
+
+
+.ok {
+	border-left: 10px solid green;
+}
+
+.terminar {
+	border-left: 10px solid orange;
+}
+
+.testar {
+	border-left: 10px solid blue;
+}
+
+.implementar {
+	border-left: 10px solid red;
+}
+
+
+.file_upload {
+	position: relative;
+	overflow: hidden;
+	margin: 10px;
+}
+
+.file_upload input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.boleto_pago {
+	background-color: #ccffcc;
+}
+
+.boleto_pago_sem_processo {
+	background-color: #ffcccc;
+}
+
+p {
+	font-size: 14px;
+}
+
+.desativado {
+	background-color: #dddddd;
+}
+
+.lista_justificada {
+}
+.lista_justificada li {
+	margin-left: 20px;
+	text-align: justify;
+	list-style: none;
+}
+
+.lista_justificada li label {
+	font-size: 12px;
+}
+
+.popover_content {
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.alerta-documentos-reprovados {
+	text-align: center; 
+	background-color: #ff0000; 
+	color: #ffffff; 
+	font-weight: bold; 
+	font-size: 14px;
+	border-radius: 7px; 
+	cursor: pointer;
+	padding: 5px;
+}
