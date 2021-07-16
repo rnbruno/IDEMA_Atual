@@ -1,25 +1,49 @@
-#Cadastro Afastamento
+#	Cadastro Afastamento
 
 
 
-##Tabelas MySQL Criadas
+##	Tabelas MySQL Criadas
 
 
 
-###Rotina de afastamento
+###	Rotina de afastamento
 
-1.
+1. Rotinas são acionadas EVERY 6 HOUR;
 
-2.
+2. Imprescindível a ordem da rotina:
+   1. Insert LOG_CADASTRO_AFASTAMENTO;
+   2. Update DADO_FUNCIONAL;
+   3. Update EVENTO_AFASTAMENTO.
 
 
 
-####Update table DADO_FUNCIONAL
+#	
 
-update bloqueado=1 
+####	Insert LOG_CADASTRO_AFASTAMENTO
 
-update bloqueado=0
+Log criado de 00:00:00
 
-####Update table EVENTO_AFASTAMENTO
+select users que se enquadram na condição
 
-####Insert LOG_CADASTRO_AFASTAMENTO
+* data_inicial
+* data_final
+
+cadastrados 
+
+####	Update table DADO_FUNCIONAL
+
+start 00:01:00
+
+com select user = condição
+
+alterar
+
+* update bloqueado=1 
+* update bloqueado=0
+
+####	Update table EVENTO_AFASTAMENTO
+
+start 00:02:00
+
+Por fim alterar o flag na tabela evento afastamento
+
