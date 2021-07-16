@@ -1,6 +1,7 @@
 #	Discovery PONTO
 
 
+
 ####	*inserir option no select Justificava
 
 A tabela justificativa_ajuste DB[ponto] armazena os options;
@@ -9,7 +10,50 @@ A tabela justificativa_ajuste DB[ponto] armazena os options;
 
 #	Cadastro Afastamento
 
+##	CERBERUS
 
+Criando menu PONTO in table MENU and subitem Cadastrar Afastamento
+
+######	menu_id,titulo,script,requer_id,entidade,menu_pai_id
+
+
+
+* PONTO 
+  * Cadastrar Afastamento; ponto/cadastrar_afastamento/cadastrar_afastamento.php;
+
+diretório ponto/ fica externo ao cerberus para evitar
+
+##	PHP e AJAX
+
+Tratar post data para posterior inserção no BD
+
+Recebe post in arquive 
+
+####	ajax.recebe_afastamento.php
+
+explode("/",safepost('data'));
+
+print_r={
+
+​	[0]= dia;
+
+​	[1]=mes;
+
+​	[2]=ano
+
+}
+
+formato necessário
+
+*`YYYY-MM-DD`*
+
+####	ajax_verificar_afastamento_cadastrado.php
+
+
+
+* SELECT user_afastado FROM `evento_afastamento` WHERE user_afastado=@user_afastado and starting_ending=0 and tipo_afastamento=@tipo_afastamento
+
+  
 
 ##	Tabelas MySQL Criadas
 
