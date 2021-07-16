@@ -1,6 +1,5 @@
 #	Discovery PONTO
 
-![image-20210716100413677](C:\Users\07624990440\AppData\Roaming\Typora\typora-user-images\image-20210716100413677.png)
 
 ####	*inserir option no select Justificava
 
