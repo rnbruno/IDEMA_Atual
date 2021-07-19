@@ -6,7 +6,18 @@
 
 A tabela justificativa_ajuste DB[ponto] armazena os options;
 
+##	Como registrar!?
 
+1. Peça ao setor de desenvolvimento liberação do item no menu do Cerberus;
+2. Após liberação, o menu Ponto com o submenu cadastro de afastamento será apresentado;
+3. Selecione:
+ 3.1 Tipo de Afastamento;
+ 3.2 Data Inicial;
+ 3.3 Data Final;
+ 3.4 Usuários da lista de ponto.
+4. Submeta;
+ 4.1 Caso ocorra algum erro msg em cor vermelha apresentada;
+ 4.2 Caso ocorra sucesso mensagem em cor verde é apresentada.
 
 #	Cadastro Afastamento
 
@@ -57,6 +68,26 @@ formato necessário
 
 ##	Tabelas MySQL Criadas
 
+####	table log_cadastro_afastamento
+
+* log_int;
+* data_log;
+* user;
+* tipo_afastamento;
+* data_rg;
+* user_afastado;
+* evento.
+
+####	table evento_afastamento
+
+* evento_id;
+* user_domain;
+* user_afastado;
+* data_inicio;
+* data_final;
+* tipo_afastamento;
+* starting_ending.
+
 
 
 ###	Rotina de afastamento
@@ -99,4 +130,3 @@ alterar
 start 00:02:00
 
 Por fim alterar o flag na tabela evento afastamento
-
