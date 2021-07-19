@@ -1,6 +1,6 @@
 #	Discovery PONTO
 
-![image-20210716100413677](C:\Users\07624990440\AppData\Roaming\Typora\typora-user-images\image-20210716100413677.png)
+
 
 ####	*inserir option no select Justificava
 
@@ -19,13 +19,17 @@ Criando menu PONTO in table MENU and subitem Cadastrar Afastamento
 
 
 * PONTO 
-  * Cadastrar Afastamento; ponto/cadastrar_afastamento/cadastrar_afastamento.php	
+  * Cadastrar Afastamento; ponto/cadastrar_afastamento/cadastrar_afastamento.php;
+
+diretório ponto/ fica externo ao cerberus para evitar
 
 ##	PHP e AJAX
 
 Tratar post data para posterior inserção no BD
 
-Recebe post in arquive ajax.recebe_afastamento.php
+Recebe post in arquive 
+
+####	ajax.recebe_afastamento.php
 
 explode("/",safepost('data'));
 
@@ -43,7 +47,35 @@ formato necessário
 
 *`YYYY-MM-DD`*
 
+####	ajax_verificar_afastamento_cadastrado.php
+
+
+
+* SELECT user_afastado FROM `evento_afastamento` WHERE user_afastado=@user_afastado and starting_ending=0 and tipo_afastamento=@tipo_afastamento
+
+  
+
 ##	Tabelas MySQL Criadas
+
+####	table log_cadastro_afastamento
+
+* log_int;
+* data_log;
+* user;
+* tipo_afastamento;
+* data_rg;
+* user_afastado;
+* evento.
+
+####	table evento_afastamento
+
+* evento_id;
+* user_domain;
+* user_afastado;
+* data_inicio;
+* data_final;
+* tipo_afastamento;
+* starting_ending.
 
 
 
