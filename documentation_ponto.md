@@ -6,7 +6,11 @@
 
 A tabela justificativa_ajuste DB[ponto] armazena os options;
 
+##	Como registrar!?
 
+1. Peça ao setor de desenvolvimento liberação do item no menu do Cerberus;
+2. Após liberação o menu Ponto com o submenu cadastro de afastamento será apresentado;
+3. 
 
 #	Cadastro Afastamento
 
