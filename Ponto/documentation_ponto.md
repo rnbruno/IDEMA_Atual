@@ -80,13 +80,19 @@ formato necessário
 
 ####	table evento_afastamento
 
-* evento_id;
-* user_domain;
-* user_afastado;
-* data_inicio;
-* data_final;
-* tipo_afastamento;
-* starting_ending.
+
+
+| evento_id | user_domain | user_afastado | data_inicio | data_final | tipo_afastamento | starting_ending |
+| --------- | ----------- | ------------- | ----------- | ---------- | ---------------- | --------------- |
+|           |             |               |             |            |                  |                 |
+
+* <b>evento_id</b>	int incremental;
+* <b>user_domain</b> int usuário logado do Cerberus;
+* <b>user_afastado</b> int usuário do Ponto;
+* <b>data_inicio</b> datetime;
+* <b>data_final</b> datetime;
+* <b>tipo_afastamento</b> - int - os tipos de afastamentos gerados pela table <i>tipo_afastamento</i>;
+* <b>starting_ending</b> int que aponta o fluxo do afastamento.
 
 
 
