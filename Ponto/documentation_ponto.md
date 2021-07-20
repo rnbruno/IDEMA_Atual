@@ -12,12 +12,12 @@ A tabela justificativa_ajuste DB[ponto] armazena os options;
 2. Após liberação, o menu Ponto com o submenu cadastro de afastamento será apresentado;
 3. Selecione:
  3.1 Tipo de Afastamento;
- 3.2 Data Inicial;
- 3.3 Data Final;
- 3.4 Usuários da lista de ponto.
+  3.2 Data Inicial;
+  3.3 Data Final;
+  3.4 Usuários da lista de ponto.
 4. Submeta;
  4.1 Caso ocorra algum erro msg em cor vermelha apresentada;
- 4.2 Caso ocorra sucesso mensagem em cor verde é apresentada.
+  4.2 Caso ocorra sucesso mensagem em cor verde é apresentada.
 
 #	Cadastro Afastamento
 
@@ -89,6 +89,18 @@ formato necessário
 * starting_ending.
 
 
+
+####	table start_end_fluxo 
+
+| id_sef | nome_sef                                                     |
+| ------ | ------------------------------------------------------------ |
+| 0      | na fila para entrar no fluxo de afastamento (usuário do ponto agendado para status bloqueado = 1) |
+| 1      | na fila para sair do fluxo de afastamento (ao esgotar a data final o usuário tem campo bloqueado =0) |
+| 2      | saiu do fluxo de afastamento                                 |
+
+id_sef é um int que referencia o nome
+
+nome_sef nomes das entradas e saídas do status do fluxo de afastamento
 
 ###	Rotina de afastamento
 
