@@ -11,13 +11,13 @@ A tabela justificativa_ajuste DB[ponto] armazena os options;
 1. Peça ao setor de desenvolvimento liberação do item no menu do Cerberus;
 2. Após liberação, o menu Ponto com o submenu cadastro de afastamento será apresentado;
 3. Selecione:
- 3.1 Tipo de Afastamento;
-  3.2 Data Inicial;
-  3.3 Data Final;
-  3.4 Usuários da lista de ponto.
+   3.1 Tipo de Afastamento;
+    3.2 Data Inicial;
+    3.3 Data Final;
+    3.4 Usuários da lista de ponto.
 4. Submeta;
- 4.1 Caso ocorra algum erro msg em cor vermelha apresentada;
-  4.2 Caso ocorra sucesso mensagem em cor verde é apresentada.
+   4.1 Caso ocorra algum erro msg em cor vermelha apresentada;
+    4.2 Caso ocorra sucesso mensagem em cor verde é apresentada.
 
 #	Cadastro Afastamento
 
@@ -64,19 +64,39 @@ formato necessário
 
 * SELECT user_afastado FROM `evento_afastamento` WHERE user_afastado=@user_afastado and starting_ending=0 and tipo_afastamento=@tipo_afastamento
 
-  
+
+
+##	Visualizar Afastamento
+
+
+
+##	Excluir Afastamento
+
+
+
+##	Editar Usuário
+
+
+
+####	alterar_usuario.php
+
+
+
+requisitos necessários para conhecer a forma que os dados do usuário referente ao setor são endeentados
+
+
+
+
 
 ##	Tabelas MySQL Criadas
 
 ####	table log_cadastro_afastamento
 
-* log_int;
-* data_log;
-* user;
-* tipo_afastamento;
-* data_rg;
-* user_afastado;
-* evento.
+| log_id | data_log | user | tipo_afastamento | data_faixa | user_afastado | evento |
+| ------ | -------- | ---- | ---------------- | ---------- | ------------- | ------ |
+|        |          |      |                  |            |               |        |
+
+
 
 ####	table evento_afastamento
 
