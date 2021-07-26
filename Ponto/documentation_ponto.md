@@ -84,6 +84,37 @@ formato necessário
 
 requisitos necessários para conhecer a forma que os dados do usuário referente ao setor são endeentados
 
+exemplo
+
+**Usuário**
+Cargo: Analista/Técnico
+Regime de trabalho: 30h
+Lotação: IDEMA - RN
+Exercício: NÚCLEO DE ARQUITETURA E ENGENHARIA
+
+| Campo                                         | Tabela         |
+| --------------------------------------------- | -------------- |
+| Cargo: Analista/Técnico                       | categoria = 2  |
+| Regime de trabalho: 30h                       |                |
+| Lotação: IDEMA - RN                           | orgao de 1 a 3 |
+| Exercício: NÚCLEO DE ARQUITETURA E ENGENHARIA |                |
+
+*na mesma tabela **orgao** temos a lotação e o exercício
+
+Criar arvore de alteração
+
+Diretor Geral/ Diretor/Supervisor/Cargo Comissionado/Analista/Técnico
+
+
+
+IDEMA RN
+
+IDEMA RN Nascimento de Castro
+
+IDEMA RN Mossoró
+
+
+
 
 
 
