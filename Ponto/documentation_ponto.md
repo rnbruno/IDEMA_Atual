@@ -82,7 +82,7 @@ formato necessário
 
 
 
-requisitos necessários para conhecer a forma que os dados do usuário referente ao setor são endeentados
+<i>requisitos necessários para conhecer a forma que os dados do usuário referente ao setor são endeentados</i>
 
 exemplo
 
@@ -99,23 +99,14 @@ Exercício: NÚCLEO DE ARQUITETURA E ENGENHARIA
 | Lotação: IDEMA - RN                           | orgao de 1 a 3 |
 | Exercício: NÚCLEO DE ARQUITETURA E ENGENHARIA |                |
 
-*na mesma tabela **orgao** temos a lotação e o exercício
+> ​	*na mesma tabela **orgao** temos os campo lotação e o exercício
 
-Criar arvore de alteração
+Página de edição do usuário com os campos:
 
-Diretor Geral/ Diretor/Supervisor/Cargo Comissionado/Analista/Técnico
-
-
-
-IDEMA RN
-
-IDEMA RN Nascimento de Castro
-
-IDEMA RN Mossoró
-
-
-
-
+* Usuário selecionado a tabela dado_funcional and inner join a tabela pessoa;
+* Campo na tabela categoria temos os campos;
+* Lotação na tabela orgao os campos <4 são destinados a lotacao;
+* Exercício - na tabela orgao os campos >3 são destinados ao exercício;
 
 
 
