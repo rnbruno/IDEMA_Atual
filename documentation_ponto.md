@@ -128,21 +128,23 @@ select users que se enquadram na condição
 cadastrados 
 
 ####	Update table DADO_FUNCIONAL
-
+###Rotina_afastamento_entrada
 ``UPDATE dado_funcional SET `bloqueado` = 1 where id_pessoa in (select user_afastado from evento_afastamento where evento_id in (SELECT evento_id from evento_afastamento where starting_ending=0 and excluido=0 and data_inicio<CURRENT_TIMESTAMP and data_final>CURRENT_TIMESTAMP))``
 
 start 00:01:00
 
-1) SELECT evento_id from evento_afastamento where starting_ending=0 and excluido=0 and data_inicio<CURRENT_TIMESTAMP and data_final>CURRENT_TIMESTAMP. Selecionar os ids que ainda não entraram na rotina (starting_ending=0, data_inicio é menor que a data atual e a data_final é maior que a data atual;
-2) 
+1) SELECT evento_id from evento_afastamento where starting_ending=0 and excluido=0 and data_inicio<CURRENT_TIMESTAMP and data_final>CURRENT_TIMESTAMP. Seleciona os ids do evento que ainda não entraram na rotina (starting_ending=0, data_inicio é menor que a data atual e a data_final é maior que a data atual;
+2) select user_afastado from evento_afastamento where evento_id in [...]. Seleciona os ids do usuário registrados nos id_evento.
+3) Atualiza a tabela dado_funcional no campo bloqueado=1 dos usuário listados na subquery.
 
-com select user = condição
+Resumo: * update bloqueado=1 
+###Rotina_afastamento_saida
 
-alterar
+``UPDATE dado_funcional SET `bloqueado` = 0 where id_pessoa in (select user_afastado from evento_afastamento where evento_id in (SELECT evento_id from evento_afastamento where starting_ending=1 and excluido=0 and data_inicio<CURRENT_TIMESTAMP and data_final<CURRENT_TIMESTAMP))``
+1) Procedimento semelhante apenas alterando a coluna starting_ending.
+Resumo: * update bloqueado=0
 
-* update bloqueado=1 
-* update bloqueado=0
-
+Depois de alterar a coluna bloqueado vamos adentrar na tabela afastamento para gerenciar os afastamento agendados, alterando o status.
 ####	Update table EVENTO_AFASTAMENTO
 
 start 00:02:00
