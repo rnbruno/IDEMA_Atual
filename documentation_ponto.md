@@ -133,6 +133,9 @@ cadastrados
 
 start 00:01:00
 
+1) SELECT evento_id from evento_afastamento where starting_ending=0 and excluido=0 and data_inicio<CURRENT_TIMESTAMP and data_final>CURRENT_TIMESTAMP. Selecionar os ids que ainda não entraram na rotina (starting_ending=0, data_inicio é menor que a data atual e a data_final é maior que a data atual;
+2) 
+
 com select user = condição
 
 alterar
