@@ -123,6 +123,8 @@ cadastrados
 
 ####	Update table DADO_FUNCIONAL
 
+//UPDATE dado_funcional SET `bloqueado` = 1 where id_pessoa in (select user_afastado from evento_afastamento where evento_id in (SELECT evento_id from evento_afastamento where //starting_ending=0 and excluido=0 and data_inicio<CURRENT_TIMESTAMP and data_final>CURRENT_TIMESTAMP))
+
 start 00:01:00
 
 com select user = condição
