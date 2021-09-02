@@ -105,7 +105,14 @@ formato necessário
 
 ####	Insert LOG_CADASTRO_AFASTAMENTO
 
-Log criado de 00:00:00
+//INSERT INTO log_cadastro_afastamento (data_log,user_afastado, evento, tipo_afastamento,data_faixa) select CURRENT_TIMESTAMP, //user_afastado,'rotina_afastamento_entrada',tipo_afastamento,data_inicio from evento_afastamento where evento_id in (SELECT evento_id from evento_afastamento where //starting_ending=0 and data_inicio<CURRENT_TIMESTAMP and data_final>CURRENT_TIMESTAMP)
+//Log criado de 00:00:00
+
+a) data_log -> o momento atual do registro da rotina;
+b)user_afastado -> usuario de cadastro, porém nulo devido a rotina ser automática;
+c)evento -> descreve o tipo de rotina (rotina_afastamento_entrada e rotina_afastamento_saida);
+d) Tipo de afastamento -> resgata o tipo de afastamento da tabela Evento Afastamento que representa o afastamento lançado no sistema;
+e) data_faixa -> a descricao da faixa de horarios inicio e fim do lançamento, porém na tabela de log apenas a data da rotina é capturada.
 
 select users que se enquadram na condição
 
