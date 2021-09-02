@@ -146,8 +146,15 @@ Resumo: * update bloqueado=0
 
 Depois de alterar a coluna bloqueado vamos adentrar na tabela afastamento para gerenciar os afastamento agendados, alterando o status.
 ####	Update table EVENTO_AFASTAMENTO
+###Rotina_evento_afastamento_entrada
+update evento_afastamento set starting_ending=1 where starting_ending=0 and data_inicio<CURRENT_TIMESTAMP and data_final>CURRENT_TIMESTAMP
+1)Selecionar todos os evento_afastamento que tenham a coluna startin_ending=0 e as faixas de datas;
 
+###Rotina_evento_afastamento_saida
+update evento_afastamento set starting_ending=2 where starting_ending=1 and data_inicio<CURRENT_TIMESTAMP and data_final<CURRENT_TIMESTAMP
+
+1) Comando semelhante.
 start 00:02:00
 
-Por fim alterar o flag na tabela evento afastamento
+
 
