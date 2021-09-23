@@ -158,3 +158,6 @@ start 00:02:00
 
 ### Configuração das rotinas
 
+Verificar as rotinas
+SELECT * FROM INFORMATION_SCHEMA.events
+
