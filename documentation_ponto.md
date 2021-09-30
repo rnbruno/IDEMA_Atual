@@ -167,4 +167,7 @@ SELECT * FROM INFORMATION_SCHEMA.events
 `nr_abono`, `id_pessoa`, `matricula`, `nr_vinculo`, `data_abono`, `periodo_abono`, `justificativa`, `id_pessoa_certificacao`, `data_hora_certificacao`, `indicador_certificado`, `id_pessoa_registro`, `data_hora_registro`, `ip_registro`, `justificativa_certificacao`, `nr_justificativa`, `indicador_excluido`
 #### Tabela Ajuste
 #### Tabela Arquivo_ajuste
+A tabela referece aos dados tanto dos Ajustes e do Abonos.
+São armazenados dois id distintos, se um é registrado o outro é Null.
+
 
