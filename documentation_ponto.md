@@ -170,6 +170,7 @@ SELECT * FROM INFORMATION_SCHEMA.events
 A tabela referece aos dados tanto dos Ajustes e do Abonos.
 São armazenados dois id distintos, se um é registrado o outro é Null.
 
+`
 SELECT * from (
                                     SELECT a.nr_ajuste,matricula,data_hora_ponto,entrada_saida, id_pessoa_registro,data_hora_registro, justificativa,data_hora_certificacao,aa.cod_repositorio, aa.descricao_arquivo,
                                     p.nome_pessoa,indicador_certificado,texto_justificativa,a.nr_justificativa,indicador_excluido,
@@ -179,3 +180,4 @@ SELECT * from (
    											left join arquivo_ajuste aa on a.nr_ajuste=aa.nr_ajuste
                                                 WHERE a.id_pessoa= 1 and a.nr_vinculo= 1) 
                                             as b where ano= 2021 and mes= 9 order by dia
+`
