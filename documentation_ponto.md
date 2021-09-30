@@ -181,3 +181,17 @@ SELECT * from (
                                                 WHERE a.id_pessoa= 1 and a.nr_vinculo= 1) 
                                             as b where ano= 2021 and mes= 9 order by dia
 `
+`
+SELECT * from (
+                                    SELECT a.nr_abono,matricula,data_abono,periodo_abono DIV 60 as hora_abono, id_pessoa_registro,data_hora_registro, justificativa,data_hora_certificacao,aa.cod_repositorio, aa.descricao_arquivo,
+                                    p.nome_pessoa,indicador_certificado,texto_justificativa,a.nr_justificativa,indicador_excluido,
+                                            year(data_abono) as ano, month(data_abono) as mes, day(data_abono) as dia 
+                                            FROM `abono` a left join pessoa p on p.id_pessoa=a.id_pessoa_certificacao 
+                                            left join justificativa_ajuste ja on ja.nr_justificativa=a.nr_justificativa
+   											left join arquivo_ajuste aa on a.nr_abono=aa.nr_abono
+                                                WHERE a.id_pessoa= 1 and a.nr_vinculo= 1) 
+                                            as b where ano= 2021 and mes= 9 order by dia
+                                            
+`   
+                                            
+                                         
