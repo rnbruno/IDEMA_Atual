@@ -164,4 +164,7 @@ SELECT * FROM INFORMATION_SCHEMA.events
 ## Demanda de criação de link para baixar arquivo anexado
 ### Reconhecendo as tabelas
 #### Tabela Abono
+`nr_abono`, `id_pessoa`, `matricula`, `nr_vinculo`, `data_abono`, `periodo_abono`, `justificativa`, `id_pessoa_certificacao`, `data_hora_certificacao`, `indicador_certificado`, `id_pessoa_registro`, `data_hora_registro`, `ip_registro`, `justificativa_certificacao`, `nr_justificativa`, `indicador_excluido`
+#### Tabela Ajuste
+#### Tabela Arquivo_ajuste
 
