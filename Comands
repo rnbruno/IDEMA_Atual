@@ -1,0 +1,5 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT COUNT (*), processo_id
+  FROM MOVIMENTO_PROCESSO group by processo_id having COUNT (*)>10
+  
+  Pesquisar id únicos.
